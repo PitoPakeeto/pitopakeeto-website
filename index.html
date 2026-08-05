@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pito Pakeeto — high-energy punk and metal.">
+  <title>Pito Pakeeto</title>
+  <style>
+    :root { color-scheme: dark; --page-width: 1200px; }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background: #171717;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    main {
+      width: min(100%, var(--page-width));
+      padding: 0;
+    }
+    .flyer {
+      position: relative;
+      width: 100%;
+      line-height: 0;
+    }
+    .flyer img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .hotspot {
+      position: absolute;
+      display: block;
+      z-index: 2;
+      border-radius: 8px;
+    }
+    .hotspot:focus-visible {
+      outline: 3px solid #fff;
+      outline-offset: 2px;
+    }
+
+    /* Clickable areas matching the links in the original PDF. */
+    .youtube-icon { left: 34.41%; top: 78.96%; width: 5.26%; height: 7.01%; }
+    .watch-live   { left: 41.26%; top: 80.67%; width: 8.19%; height: 4.11%; }
+    .spotify-icon { left: 52.74%; top: 80.77%; width: 2.63%; height: 3.51%; }
+    .listen       { left: 58.53%; top: 80.46%; width: 8.19%; height: 4.11%; }
+    .book         { left: 40.20%; top: 84.97%; width: 19.68%; height: 6.21%; }
+
+    .utility {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      padding: 14px 16px 22px;
+      background: #171717;
+      line-height: 1.2;
+    }
+    .utility a {
+      color: #fff;
+      border: 1px solid #555;
+      padding: 10px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+      background: #202020;
+    }
+    .utility a:hover,
+    .utility a:focus-visible {
+      border-color: #d00;
+    }
+    @media (max-width: 600px) {
+      .utility { padding-top: 10px; }
+      .utility a { padding: 9px 12px; font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="flyer" aria-label="Pito Pakeeto electronic press kit">
+      <img src="PitoWebsite.png"
+           alt="Pito Pakeeto band introduction and booking flyer">
+
+      <a class="hotspot youtube-icon"
+         href="https://youtu.be/TkqtoWX-E94?si=beZtaubILoSc1Y7P"
+         target="_blank" rel="noopener"
+         aria-label="Watch Pito Pakeeto on YouTube"></a>
+
+      <a class="hotspot watch-live"
+         href="https://youtu.be/TkqtoWX-E94?si=beZtaubILoSc1Y7P"
+         target="_blank" rel="noopener"
+         aria-label="Watch Pito Pakeeto live"></a>
+
+      <a class="hotspot spotify-icon"
+         href="https://open.spotify.com/artist/3T6mnZDnLdGuDpHLA3ufKd"
+         target="_blank" rel="noopener"
+         aria-label="Listen to Pito Pakeeto on Spotify"></a>
+
+      <a class="hotspot listen"
+         href="https://open.spotify.com/artist/3T6mnZDnLdGuDpHLA3ufKd"
+         target="_blank" rel="noopener"
+         aria-label="Listen to Pito Pakeeto"></a>
+
+      <a class="hotspot book"
+         href="mailto:info@pitopakeeto?subject=New%20Booking"
+         aria-label="Book Pito Pakeeto"></a>
+    </section>
+
+    <nav class="utility" aria-label="Document options">
+      <a href="PitoWebsite.pdf" target="_blank">Open PDF</a>
+      <a href="PitoWebsite.pdf" download>Download PDF</a>
+    </nav>
+  </main>
+</body>
+</html>
